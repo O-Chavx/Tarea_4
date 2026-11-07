@@ -155,7 +155,7 @@ uv run evidencias_ia/convertir.py                  # transcripciones .jsonl a .m
 
 ## Evidencias del uso de IA
 
-Todo está en [`evidencias_ia/`](evidencias_ia/), con un índice en su README:
+Todo está en [`evidencias_ia/`](evidencias_ia/), con un índice en su README. La [bitácora de desarrollo](evidencias_ia/bitacora_desarrollo.md) resume en una tabla cada pedido, qué hizo la IA, qué se corrigió y quién decidió.
 
 | Carpeta | Contenido |
 |---|---|

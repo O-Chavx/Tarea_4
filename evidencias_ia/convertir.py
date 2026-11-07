@@ -25,7 +25,9 @@ def limpiar(t):
 
 def convertir(ruta):
     md = [f"# Transcripción: {ruta.stem}", "", f"Archivo original: `{ruta.name}`", ""]
-    pedido = ruta.with_name("prompt.txt")
+    pedido = ruta.with_suffix(".prompt.txt")
+    if not pedido.exists():
+        pedido = ruta.with_name("prompt.txt")
     if pedido.exists():
         md += ["## Pedido del usuario (argumento de `claude -p`)", "", pedido.read_text(encoding="utf-8").strip(), ""]
     for linea in ruta.read_text(encoding="utf-8").splitlines():

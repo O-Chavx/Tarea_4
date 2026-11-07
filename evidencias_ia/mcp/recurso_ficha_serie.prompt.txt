@@ -1,0 +1,1 @@
+Lee el recurso MCP bcrp://serie/PN09822PM del servidor bcrp y dime qué serie es, su frecuencia, desde cuándo hay datos y cuándo se actualizó. Usa solo el recurso.

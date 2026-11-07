@@ -4,8 +4,9 @@ Asistente usado: Claude (Claude Code y claude.ai). Las transcripciones `.jsonl` 
 
 | Carpeta | Qué contiene | Etapa |
 |---|---|---|
-| `mcp/` | `conversacion_mcp_bcrp_sesion04.md`: conversación del desarrollo del servidor del BCRP (Sesión 04). `pytest_10_passed.txt`: salida de las pruebas | Desarrollo del MCP y pruebas |
-| `skills/` | `conversacion_skills_enaho_sesion16.md`: conversación del desarrollo de las Skills de la ENAHO (Sesión 16) | Desarrollo de las Skills |
+| `bitacora_desarrollo.md` | Tabla cronológica: qué se pidió, qué hizo la IA, qué se corrigió y quién decidió, con enlace a la evidencia | Todo el proceso |
+| `mcp/` | `conversacion_mcp_bcrp_sesion04.md`: conversación del desarrollo del servidor del BCRP (Sesión 04). `pytest_10_passed.txt`: salida de las pruebas. `recurso_ficha_serie.md`: Claude Code lee el recurso `bcrp://serie/{codigo}`. `prompt_informe.md`: Claude Code usa el prompt `informe` (`/mcp__bcrp__informe`) | Desarrollo del MCP y pruebas |
+| `skills/` | `conversacion_skills_enaho_sesion16.md`: conversación del desarrollo de las Skills de la ENAHO (Sesión 16). `invocacion_limpiando.md`, `invocacion_graficando.md` e `invocacion_mapeando.md`: cada Skill invocada a mano (`/limpiando-enaho 2024`, `/graficando-enaho sexo`, `/mapeando-enaho`) | Desarrollo de las Skills |
 | `integracion/` | `ejecucion.md`/`.jsonl`: la sesión en que Claude Code respondió la pregunta de investigación usando 4 Skills y 4 herramientas MCP. `prompt.txt` es el pedido exacto. `corrida_1_slash/` es una primera corrida invocada con `/investigando-peru`. | Integración e informe |
 | `evaluacion/` | `A_<id>.md` y `B_<id>.md`: las 20 sesiones independientes del experimento (10 preguntas × 2 modos), con `log_evaluar.txt` | Evaluación |
 | `desarrollo/` | `conversacion_tarea4.md`: conversación con el asistente que construyó la Tarea 4 (plan, extensión del MCP y las Skills, integración, evaluación, correcciones y entrega) | Integración, correcciones y documentación |
